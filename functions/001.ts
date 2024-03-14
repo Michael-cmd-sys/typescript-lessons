@@ -19,9 +19,9 @@ function multiply(a:number, b:number, c?:number){
 
 // Rest parameters
 function getTotal(...numbers:number[]):number{
-    let total = 0;//type is implicitly declared aas nuymber here 
+    let total = 0;//type is implicitly declared aas number here 
 
-    numbers.forEach(num=> total+= num);
+    total = numbers.reduce((prev, curr) => prev + curr, 0);
     return total;
 }
 

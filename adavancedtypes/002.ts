@@ -11,6 +11,8 @@
 
 // UserDefined type guard function
 // function that simply returns ```arg is aType```
+
+// 
 class Custoomer {
     isCreditAllowed(): boolean {
         return true;

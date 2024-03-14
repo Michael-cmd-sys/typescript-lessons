@@ -29,10 +29,10 @@ interface Contact {
     phone: string;
 }
 
-type Employee = Identity & Contact;
+type _Employee = Identity & Contact;
 type Customer = BusinessPartner & Contact;
 
-let e:Employee = {
+let e:_Employee = {
     name: "John Doe",
     id: 1,
     email: "john.doe@example.com",

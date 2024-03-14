@@ -35,7 +35,7 @@ function randBetween(low:number, high:number){
 }
 
 let nums = new Stack<number>(25);
-
+// Uncommente this code to try the idea of generics
 // while(!nums.isFull()){
 //     let n = randBetween(1, 10);
 //     console.log(`Pushed ${n} into the stack.`);

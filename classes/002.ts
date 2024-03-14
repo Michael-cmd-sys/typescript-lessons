@@ -1,6 +1,7 @@
 /**
  * Class getters and setters
  * 
+ * Typescript setter functions cannot have a type return annotation
  * 
  */
 
@@ -28,15 +29,15 @@ class Person_ {
         this._firstName = ln;
     }
 
-    public get age(){
+    public get age():number{
         return this._age;
     }
 
-    public get firstName(){
+    public get firstName():string{
         return this._firstName;
     }
 
-    public get lastName(){
+    public get lastName():string{
         return this._lastName;
     }
 
@@ -46,8 +47,12 @@ class Person_ {
 }
 
 let p2 = new Person_()
-p2.age = (new Date).getFullYear() - 2004;
-p2.firstName = "Michael";
-p2.lastName = "Awuni";
 
-console.log(`My name is ${p2.getFullName()} and I am ${p2.age} years old`);
+try{
+    p2.age = (new Date).getFullYear() - 2024;
+    p2.firstName = "Michael";
+    p2.lastName = "Awuni";
+    console.log(`My name is ${p2.getFullName()} and I am ${p2.age} years old`);
+}catch(e){
+    console.log("[!] - Validation failed!")
+}

@@ -1,7 +1,7 @@
 // Typescript arrays
 
 let skills: string[];
-skills = ["Problem Solving", "Critical thinking", "Collaboration", "Software design"];
+skills = ["Problem Solving", "Critical thinking", "Collaboration", "Software design", "Analytical"];
 
 skills.push("Programming");
 
@@ -16,6 +16,6 @@ console.log(scores);
 
 
 let rgb: [string, string, string];
-rgb=["red", "green", "bue"];
+rgb=["red", "green", "blue"];
 
 console.log(rgb);

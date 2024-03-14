@@ -1,7 +1,7 @@
 // Simple statements to get started with typescript
 /**
  * Primitive tpes in typescsript include
- * numbver
+ * number
  * bigint
  * string
  * boolean
@@ -14,7 +14,7 @@ let age: number; //Same as above
 let active: boolean; //explicitly defined variable as type boolean
 
 // Arrays
-let friends: string[]= ["Kenneth", "Samuel", "Enoch", "Asford", "Edmund", "William", "Glover", "Marvin", "Ebenezer", "Hamza", "Wilson"];
+let friends: string[]= ["Kenneth", "Samuel", "Enoch", "Asford", "Edmund", "William", "Glover", "Marvin", "Ebenezer", "Hamza", "Wilson", "Jaffar", "Donatus", "Prince", "Franklin", "Raymond"];
 
 //explicitly defined the above to have an array of values of type string
 
@@ -38,8 +38,8 @@ console.log(person);
 let greeting:(name:string)=>string;//annotated a function and it's return type explicitly
 
 greeting = function(name:string){
-    return `Hi ${name}!`;
+    return  `Hi ${name}!`;
 }
 
 
-greeting("Amigo");
+console.log(greeting("Amigo"));

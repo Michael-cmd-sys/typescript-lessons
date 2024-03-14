@@ -1,13 +1,11 @@
 /**\
- * Function overlaoding
+ * Function overloading
  * In typescript, function overloadings allow you to establish
  * the relationship between the parameter types and result types of a function
  */
 
 class Counter {
     private current: number = 0;
-    count(): number;
-    count(target: number): number[];
     count(target?: number) : number | number[]{
         if(target){
             let values:number[] = [];
@@ -24,7 +22,9 @@ class Counter {
     }
 }
 
-let counter = new Counter();
+let counter_ = new Counter();
 
-console.log(counter.count());
-console.log(counter.count(21));
+console.log(counter_.count());
+console.log(counter_.count())
+console.log(counter_.count())
+console.log(counter_.count(21));

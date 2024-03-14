@@ -35,4 +35,5 @@ function isVacMonth(month: Month){
     return isVac;
 }
 
-console.log(isVacMonth(0));
+console.log(isVacMonth(Month.Mar));
+console.log(Month.Apr === 3) //prints true

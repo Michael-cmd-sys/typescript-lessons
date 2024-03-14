@@ -14,7 +14,7 @@ let input: alnum;
 input = "Hello John Nash";
 console.log(input);
 input = (new Date).getFullYear() - 2004;
-console.log(input);
+console.log(`I am ${input} years old. ;)`);
 // However `input = {} or input = true` will throw an error
 
 // String literal types
@@ -28,3 +28,7 @@ mouseEvent = "click";
 mouseEvent = "dblclick";
 mouseEvent = "mouseup";
 // mouseEvent = "scroll"; trows an error
+
+let gameMovements: "w" | "a" | "s" | "d";
+gameMovements = "w"; //This is valid
+// gameMovements = "top"; //Throws an error.

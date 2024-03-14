@@ -29,13 +29,13 @@ let colors = ["red", "yellow", "cyan", "magenta", "blue"];
 console.log(getRandomElement(colors));
 
 // Returning multiple types
-function merge<U extends object, V extends object>(obj1: U, obj2:V){
+function merge<U extends object, V extends object>(obj1: U, obj2:V):object{
     return {
         ...obj1,
         ...obj2
     }
 }
-// Implemented da simple type constraint here
+// Implemented simple type constraint here
 let result = merge(
     {
         name: "Michael Awuni",

@@ -13,7 +13,7 @@ class _Person {
     }
 
     describe(): string{
-        return `I am ${this.getFullName()}.`;
+        return `I am ${this.getFullName()}`;
     }
 }
 
@@ -28,7 +28,7 @@ class Employee extends _Person {
     }
 
     describe(): string {
-        return `${super.describe()}\nI am a ${this.jobTitle}`;
+        return `${super.describe()} and I am a ${this.jobTitle}`;
     }
 }
 
